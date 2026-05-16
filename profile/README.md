@@ -11,6 +11,7 @@ multi-model productivity without breaking flow.
 **English** · [中文](README.zh.md)
 
 <p>
+  <a href="https://aikeylabs.com"><img alt="website" src="https://img.shields.io/badge/website-aikeylabs.com-0ea5e9?style=flat-square"></a>
   <a href="https://github.com/aikeylabs/launch/releases/latest"><img alt="latest release" src="https://img.shields.io/github/v/release/aikeylabs/launch?label=latest&style=flat-square"></a>
   <a href="https://github.com/aikeylabs/launch#install"><img alt="quickstart" src="https://img.shields.io/badge/quickstart-launch-2563eb?style=flat-square"></a>
   <img alt="platforms" src="https://img.shields.io/badge/platform-macOS%20%7C%20Linux%20%7C%20Windows-555?style=flat-square">
@@ -98,18 +99,27 @@ aikey use backup-account
 </td>
 </tr>
 <tr>
-<td colspan="2" valign="top">
+<td width="50%" valign="top">
 
 ### Custom routing for any AI client
 
-`aikey route` outputs a `base_url` + `api_key` you can paste into Cursor, OpenCode,
-Continue, or any OpenAI / Anthropic-compatible client. Compose multiple accounts
-into one controllable routing fabric.
+`aikey route` outputs a `base_url` + `api_key` you can paste into Cursor,
+OpenCode, Continue, or any OpenAI / Anthropic-compatible client. Compose
+multiple accounts into one controllable routing fabric.
 
 ```bash
 aikey route                # list every available route
-aikey route my-key         # copy base_url + api_key for a specific key
+aikey route my-key         # copy base_url + api_key for a key
 ```
+
+</td>
+<td width="50%" valign="top">
+
+### Seamlessly plug in third-party agents
+
+**Third-party agents never see your plaintext keys.** Real provider
+credentials stay in the Vault; each agent's access stays under your
+control — granted per agent, revoked per agent.
 
 </td>
 </tr>

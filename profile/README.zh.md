@@ -11,6 +11,7 @@
 [English](README.md) · **中文**
 
 <p>
+  <a href="https://aikeylabs.com"><img alt="website" src="https://img.shields.io/badge/website-aikeylabs.com-0ea5e9?style=flat-square"></a>
   <a href="https://github.com/aikeylabs/launch/releases/latest"><img alt="latest release" src="https://img.shields.io/github/v/release/aikeylabs/launch?label=latest&style=flat-square"></a>
   <a href="https://github.com/aikeylabs/launch#install"><img alt="quickstart" src="https://img.shields.io/badge/quickstart-launch-2563eb?style=flat-square"></a>
   <img alt="platforms" src="https://img.shields.io/badge/platform-macOS%20%7C%20Linux%20%7C%20Windows-555?style=flat-square">
@@ -94,17 +95,26 @@ aikey use backup-account
 </td>
 </tr>
 <tr>
-<td colspan="2" valign="top">
+<td width="50%" valign="top">
 
 ### 自定义路由 · 接入任意 AI 客户端
 
-`aikey route` 输出的 `base_url` + `api_key` 可以粘贴到 Cursor、OpenCode、Continue，
-或任何 OpenAI / Anthropic 兼容客户端。把多个 AI 账号编排成一套可控路由。
+`aikey route` 输出的 `base_url` + `api_key` 可以粘贴到 Cursor、OpenCode、
+Continue，或任何 OpenAI / Anthropic 兼容客户端。把多个 AI 账号编排成
+一套可控路由。
 
 ```bash
 aikey route                # 查看所有可用路由
 aikey route my-key         # 复制指定 KEY 的 base_url + api_key
 ```
+
+</td>
+<td width="50%" valign="top">
+
+### 无缝衔接第三方 Agent
+
+**第三方 Agent 永远拿不到明文 KEY。** 真实的 provider 凭证始终留在 Vault；
+每个 Agent 的访问权限都在你的掌控之中 —— 按 Agent 授予、按 Agent 撤销。
 
 </td>
 </tr>
